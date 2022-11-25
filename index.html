@@ -40,20 +40,26 @@
 
 <body>
   <div class="shadow"></div>
+
   <nav class="navbar">
       <img src="assets/images/logo.jpg" alt="logo hyphen" srcset="" class="navbar__logo">
-      <ul class="navbar__menu">
-        <li><a href="#">Name 1</a></li>
-        <li><a href="#">Name 2</a></li>
-        <li><a href="#">Name 3</a></li>
-        <li><a href="#">Name 4</a></li>
-      </ul>
+      <div class="navbar-content">
+        <ul class="navbar-content__menu">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="tech1.html">Hyphen</a></li>
+          <li><a href="tech2.html">Technologies</a></li>
+        </ul>
+        <button>CONTACTEZ-NOUS</button>
+      </div>
       <button class="navbar__menu-icon">
         <img src="assets/images/menu.svg" alt="menu icon">
       </button>
   </nav>
 
   <main class="main-home">
+    <video autoplay muted loop id="main__background">
+      <source src="assets/videos/background.mp4" type="video/mp4">
+    </video>
     <div class="services">
       <div class="services__item">
         <a href="#">
