@@ -2,6 +2,7 @@
   "name": "quick-parcel-project",
   "version": "1.0.0",
   "description": "",
+  "license": "mit",
   "main": "index.html",
   "scripts": {
     "start": "parcel index.html tech1.html tech2.html",
