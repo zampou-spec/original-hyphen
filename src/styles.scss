@@ -8,7 +8,7 @@ body {
 .shadow {
   background: transparent;
   width: 100%;
-  height: 50px;
+  height: 65px;
 }
 
 .navbar {
@@ -23,12 +23,12 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  height: 50px;
+  height: 65px;
   z-index: 1000;
 
   .navbar__logo {
     width: auto;
-    height: 35px;
+    height: 45px;
   }
 
   .navbar-content {
@@ -377,8 +377,8 @@ body {
         margin-bottom: 20px;
 
         @media (max-width: 750px) {
-            font-size: 1.4em;
-            margin-bottom: 10px;
+          font-size: 1.4em;
+          margin-bottom: 10px;
         }
       }
 
@@ -422,6 +422,7 @@ body {
       font-size: 2em;
       font-weight: bold;
       color: #00a1b8;
+      margin-bottom: 10px;
 
       span {
         color: #b2e17d;
@@ -439,7 +440,7 @@ body {
     h3 {
       font-size: 1.6em;
       font-weight: 500;
-      margin-bottom: 20px;
+      margin-bottom: 35px;
     }
 
     .activities {
@@ -459,12 +460,11 @@ body {
           margin-bottom: 0;
         }
 
-
-
         h2 {
           height: fit-content;
           padding: 20px 0 15px 0;
           font-size: 1.5em;
+          margin-bottom: 10px;
 
           &::before {
             content: "";
@@ -488,6 +488,7 @@ body {
         ul li {
           list-style: disc;
           margin-left: 20px;
+          margin-bottom: 15px;
         }
 
       }
