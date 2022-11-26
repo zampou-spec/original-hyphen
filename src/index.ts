@@ -1,6 +1,6 @@
 // here you put all the js you want.
 
-document.addEventListener('load', () => {
+window.onload = () => {
   const pathname = window.location.pathname;
   const nav = document.querySelector('.navbar > .navbar-content');
   const menu = document.querySelector('.navbar .navbar__menu-icon');
@@ -19,4 +19,4 @@ document.addEventListener('load', () => {
   menu?.addEventListener('click', () => {
     nav?.classList.toggle('mobile')
   })
-})
+}
