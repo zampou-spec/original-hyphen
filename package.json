@@ -2,12 +2,11 @@
   "name": "quick-parcel-project",
   "version": "1.0.0",
   "description": "",
-  "license": "mit",
+  "license": "MIT",
   "main": "index.html",
   "scripts": {
-    "start": "parcel index.html tech1.html tech2.html",
-    "start-multiple-entries": "parcel index.html tech1.html tech2.html",
-    "build": "parcel build index.html tech1.html tech2.html"
+    "start": "parcel src/pages/*.html",
+    "build": "parcel build src/pages/*.html"
   },
   "dependencies": {
     "assets": "^3.0.1",
