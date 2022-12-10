@@ -82,6 +82,10 @@ body {
       margin-left: 50px;
       text-align: center;
 
+      @media (max-width: 1180px) {
+        margin-left: unset;
+      }
+
       &:hover,
       .active {
         color: #fff;
