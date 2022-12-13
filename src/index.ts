@@ -1,15 +1,14 @@
 // here you put all the js you want.
 
 window.onload = () => {
-  const nav = document.querySelector('.navbar > .navbar-content');
-  const menu = document.querySelector('.navbar .navbar__menu-icon');
+  const navbar = document.querySelector('.navbar-2');
+  const nav = document.querySelector('.navbar-2 > .navbar-content');
+  const menu = document.querySelector('.navbar-2 .navbar__menu-icon');
   const lis = document.querySelectorAll('.navbar-content__menu li');
 
   const getPagename = () => {
     const pathname = window.location.pathname;
-
     let name = pathname.split('/')
-
     return '/' + name[name.length - 1]
   }
 
@@ -18,8 +17,6 @@ window.onload = () => {
   })
 
   lis.forEach((li) => {
-    console.log(li.children[0]?.pathname, getPagename());
-    
     if (li.children[0]?.pathname == getPagename()) {
       li.classList.add('active')
     }
@@ -28,4 +25,15 @@ window.onload = () => {
   menu?.addEventListener('click', () => {
     nav?.classList.toggle('mobile')
   })
+
+  let sticky = navbar?.offsetTop;
+  window.onscroll = function () { scroll() };
+
+  const scroll = () => {
+    if (window.pageYOffset >= sticky) {
+      navbar?.classList.add('sticky')
+    } else {
+      navbar?.classList.remove('sticky');
+    }
+  }
 }
