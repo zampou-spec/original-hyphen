@@ -756,11 +756,11 @@ h1.title {
       }
 
       .images-content {
-        // max-width: 700px;
         max-height: 500px;
+        // max-height: 250px;
         display: grid;
-        grid-template-columns: repeat(2, 50%);
         grid-template-rows: repeat(2, 50%);
+        grid-template-columns: repeat(2, 50%);
 
 
         img {
@@ -771,12 +771,10 @@ h1.title {
       }
 
       .videos-content {
-        // @media (max-width: 768px) {
-        //   max-height: 300px;
-        // }
         max-height: 500px;
-        // overflow: hidden;
-        // opacity: 0;
+        // max-height: 250px;
+        overflow: hidden;
+
         video {
           object-fit: cover;
           width: 100%;
