@@ -27,7 +27,7 @@ window.onload = () => {
   })
 
   let sticky = navbar?.offsetTop;
-  window.onscroll = function () { scroll() };
+  window.onscroll = () => { scroll() };
 
   const scroll = () => {
     if (window.pageYOffset >= sticky) {

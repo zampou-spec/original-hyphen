@@ -50,8 +50,8 @@ a.btn {
   justify-content: space-between;
   border-bottom: 1px solid #eeeeee;
 
-  @media (max-width: 425px) {
-    flex-direction: column;
+  @media (max-width: 768px) {
+    display: none;
   }
 
   img {
@@ -195,6 +195,12 @@ a.btn {
 
       button {
         margin: 0;
+      }
+    }
+
+    a.btn {
+      @media (min-width: 1440px) {
+        display: none;
       }
     }
   }
@@ -608,9 +614,9 @@ h1.title {
       gap: 1.3em;
       padding: 0 30px;
 
-      @media (max-width: 425px) {
+      @media (max-width: 768px) {
         flex-direction: column;
-        gap: unset;
+        gap: 1.3em;
       }
 
       .text-content {
@@ -626,7 +632,7 @@ h1.title {
         justify-content: center;
 
         @media (max-width: 768px) {
-          max-width: 400px;
+          max-width: 500px;
         }
 
         @media (max-width: 425px) {
@@ -745,12 +751,12 @@ h1.title {
       display: flex;
       justify-content: center;
 
-      @media (max-width: 425px) {
+      @media (max-width: 768px) {
         flex-direction: column;
       }
 
       .images-content {
-        max-width: 700px;
+        // max-width: 700px;
         max-height: 500px;
         display: grid;
         grid-template-columns: repeat(2, 50%);
@@ -765,6 +771,12 @@ h1.title {
       }
 
       .videos-content {
+        // @media (max-width: 768px) {
+        //   max-height: 300px;
+        // }
+        max-height: 500px;
+        // overflow: hidden;
+        // opacity: 0;
         video {
           object-fit: cover;
           width: 100%;
