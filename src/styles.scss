@@ -757,10 +757,13 @@ h1.title {
 
       .images-content {
         max-height: 500px;
-        // max-height: 250px;
         display: grid;
         grid-template-rows: repeat(2, 50%);
         grid-template-columns: repeat(2, 50%);
+
+        @media (max-width: 768px) {
+          max-height: 250px;
+        }
 
 
         img {
@@ -772,8 +775,11 @@ h1.title {
 
       .videos-content {
         max-height: 500px;
-        // max-height: 250px;
         overflow: hidden;
+
+        @media (max-width: 768px) {
+          max-height: 250px;
+        }
 
         video {
           object-fit: cover;
