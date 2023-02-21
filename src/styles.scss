@@ -67,7 +67,7 @@ a.btn {
     @media (max-width: 425px) {
       margin-bottom: 10px;
     }
-    
+
     li {
       font-size: 14px;
       margin-right: 20px;
@@ -77,7 +77,7 @@ a.btn {
         margin-right: 0;
         text-align: center;
       }
-     }
+    }
   }
 
   .item-2 {
@@ -128,7 +128,7 @@ a.btn {
   transition: all 0.5s ease-in-out;
 
   position: relative;
-  
+
   &.sticky {
     position: fixed;
   }
@@ -540,6 +540,17 @@ h1.title {
     p {
       font-size: 1.2em;
     }
+
+
+    &.nt-2 {
+      h2 {
+        color: #000;
+
+        span {
+          color: rgb(23, 151, 174);
+        }
+      }
+    }
   }
 
   .container-activity {
@@ -573,6 +584,7 @@ h1.title {
           padding: 20px 0 15px 0;
           font-size: 1.5em;
           margin-bottom: 10px;
+          font-weight: bold;
 
           &::before {
             content: "";
@@ -625,6 +637,7 @@ h1.title {
         & div:first-child {
           margin-bottom: 10px;
         }
+
         max-width: 600px;
         display: flex;
         flex-direction: column;
